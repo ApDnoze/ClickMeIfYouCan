@@ -25,7 +25,6 @@ body{
 }
 
 input{
-    height:50px;
     font-size:14pt;
     margin-top: 20px;
     border: solid 0.1px;
@@ -80,44 +79,65 @@ body, html {
 .switch {
     display: inline-block;
     position: relative;
-    width: 70px;
-    height: 40px;
+    width: 59px;
+    height: 36px;
     cursor: pointer;
     overflow: hidden;
+    
   }
+
+
   .switch input {
     position: absolute;
     top: -30px;
     top: -30px;
     width: 0;
+    
     height: 0;
   }
+
+
   .switch input + span {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #99b4df;
+    
     border-radius: 20px;
   }
+
+
   .switch input + span:before {
     content: "";
     display: inline-block;
     position: absolute;
     top: 50%;
     left: 4px;
-    width: 32px;
-    height: 32px;
-    background: white;
+    width: 20px;
+    height: 20px;
+    background: #0071bc;
     border-radius: 50%;
     transform: translateY(-50%);
     transition: all .5s;
+    filter: blur(0.4px);
   }
+
+
   .switch input:checked + span {
-    background: #346abf;
+    border: solid 3px #05b1db;
+    filter: blur(0.4px);
+    
   }
+
+  .switch input + span {
+    border: solid 3px #05b1db;
+    filter: blur(0.4px);
+  }
+
+
   .switch input:checked + span:before {
-    left: 34px;
+    left: 30px;
+    
   }
 
