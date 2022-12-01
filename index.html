@@ -24,27 +24,38 @@
         <div class="login-box">
             <h2>Register</h2>
             <form>
+
+
               <div class="user-box">
-                <input type="text" name="" required="">
+                <input id="username" type="text" name="" required="" onfocusout="verifUsername()">
                 <label>Username</label>
               </div>
+
+
               <div class="user-box">
-                <input type="mail" name="" required="">
+                <input id="mail" type="mail" name="" required="" onfocusout="verifEmail()">
                 <label>Email</label>
               </div>
+
+
               <div class="user-box">
-                <input type="password" name="" required="">
+                <input id="password" type="password" name="" required="" onfocusout="verifPassword()">
                 <label>Password</label>
               </div>
+
+
               <div class="user-box">
-                <input type="password" name="" required="">
+                <input id="confPassword" type="password" name="" required="" onfocusout="verifConfPassword()">
                 <label>Confirm</label>
               </div>
-              <div class="checkbox">
-                <p style="font-size: 14px;">Se souvenir de moi</p>
 
+              <div class="checkbox">
+
+                <p style="font-size: 14px;">Se souvenir de moi</p>
                 <div id="animationWindow"></div>
+
               </div>
+
               <a href="#">
 
 
