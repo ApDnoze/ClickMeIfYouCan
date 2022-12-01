@@ -1,16 +1,14 @@
-var btn = false;
-
-function changeBtnCouleur(){
+function changeBtnCouleur(btn){
     if (btn){
         document.getElementById("btn_submit").removeAttribute('style');
 
-        var css = '.login-box a:hover {background: red; color: black; border-radius: 5px; box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 100px red;}';
+        var css = '.login-box a:hover {background: #fa1b27; color: white; border-radius: 5px; box-shadow: 0 0 5px #fa1b27, 0 0 25px #fa1b27, 0 0 50px #fa1b27, 0 0 100px #fa1b27;}';
         
         //Span
-        css += '.login-box a span:nth-child(1) {top: 0; left: -100%; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, red); animation: btn-anim1 1s linear infinite;}@keyframes btn-anim1 { 0% {left: -100%;}50%,100% {left: 100%;}}';
-        css += '.login-box a span:nth-child(2) {top: -100%;right: 0;width: 2px;height: 100%;background: linear-gradient(180deg, transparent, red);animation: btn-anim2 1s linear infinite;animation-delay: .25s}@keyframes btn-anim2 {0% {top: -100%;}50%,100% {top: 100%;}}';
-        css += '.login-box a span:nth-child(3) {bottom: 0;right: -100%;width: 100%;height: 2px;background: linear-gradient(270deg, transparent, red);animation: btn-anim3 1s linear infinite;animation-delay: .5s}@keyframes btn-anim3 {0% {right: -100%;}50%,100% {right: 100%;}}';
-        css += '.login-box a span:nth-child(4) {bottom: -100%;left: 0;width: 2px;height: 100%;background: linear-gradient(360deg, transparent, red);animation: btn-anim4 1s linear infinite;animation-delay: .75s;}@keyframes btn-anim4 {0% {bottom: -100%;}50%,100% {bottom: 100%;}}';
+        css += '.login-box a span:nth-child(1) {top: 0; left: -100%; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, #fa1b27); animation: btn-anim1 1s linear infinite;}@keyframes btn-anim1 { 0% {left: -100%;}50%,100% {left: 100%;}}';
+        css += '.login-box a span:nth-child(2) {top: -100%;right: 0;width: 2px;height: 100%;background: linear-gradient(180deg, transparent, #fa1b27);animation: btn-anim2 1s linear infinite;animation-delay: .25s}@keyframes btn-anim2 {0% {top: -100%;}50%,100% {top: 100%;}}';
+        css += '.login-box a span:nth-child(3) {bottom: 0;right: -100%;width: 100%;height: 2px;background: linear-gradient(270deg, transparent, #fa1b27);animation: btn-anim3 1s linear infinite;animation-delay: .5s}@keyframes btn-anim3 {0% {right: -100%;}50%,100% {right: 100%;}}';
+        css += '.login-box a span:nth-child(4) {bottom: -100%;left: 0;width: 2px;height: 100%;background: linear-gradient(360deg, transparent, #fa1b27);animation: btn-anim4 1s linear infinite;animation-delay: .75s;}@keyframes btn-anim4 {0% {bottom: -100%;}50%,100% {bottom: 100%;}}';
 
         span1 = document.querySelector("#btn_submit > span:nth-child(1)")
         span1.removeAttribute('style');
@@ -22,7 +20,7 @@ function changeBtnCouleur(){
         span4.removeAttribute('style');
 
         document.querySelector('#btn_submit').removeAttribute('style');
-        css += '.login-box form a {position: relative;display: inline-block;padding: 10px 20px;color: red;font-size: 16px;text-decoration: none;text-transform: uppercase;overflow: hidden;transition: .5s;margin-top: 40px;letter-spacing: 4px}'; 
+        css += '.login-box form a {position: relative;display: inline-block;padding: 10px 20px;color: #e60019;font-size: 16px;text-decoration: none;text-transform: uppercase;overflow: hidden;transition: .5s;margin-top: 40px;letter-spacing: 4px}'; 
         
         var style = document.createElement('style');
 
