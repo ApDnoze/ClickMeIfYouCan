@@ -11,8 +11,21 @@ body{
 
 
 
+.card_form{
+    margin-top: 200px;
+    border-radius: 6px;
+    background-color: #1a1b2f;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #1a1b2f;
+    height: fit-content;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+}
 
 input{
+    height:50px;
     font-size:14pt;
     margin-top: 20px;
     border: solid 0.1px;
@@ -20,10 +33,31 @@ input{
     border-radius: 4px;
 }
 
+::placeholder {
+   text-align: center; 
+}
+
+.form_submit{
+    margin-top: 50px;
+    
+}
+
+#submit{
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    width: 90%;
+    background-color: #1291d8;
+    font-size: 20px;
+}
+
 .title{
     font-size: 40px;
 }
 
+
+
+   
 body, html {
     height: 100%;
     width: 100%;
@@ -32,7 +66,12 @@ body, html {
 }
    
 #animationWindow {
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
     cursor: pointer;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: space-evenly;
 }
