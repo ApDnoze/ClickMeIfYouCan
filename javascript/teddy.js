@@ -19,7 +19,7 @@ const {
     }
   }
 } = window;
-const rootNode = document.getElementById("app");
+const rootNode = document.getElementById("mohamed");
 if (rootNode){
   console.log("test");
 }

@@ -3,13 +3,17 @@ body{
     background-color: #161616;
     color: white;
     font-family: 'Courier New', monospace;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
 
 
 .card_form{
     margin-top: 200px;
-    border-radius: 4px;
+    border-radius: 6px;
     background-color: #1a1b2f;
     margin-left: auto;
     margin-right: auto;
@@ -53,4 +57,16 @@ input{
 
 
 
-
+   
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+   
+#animationWindow {
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
