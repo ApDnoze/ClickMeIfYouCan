@@ -1,0 +1,12 @@
+.card_form{
+    border: solid;
+    height: 400px;
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+}
+
+input{
+    height:50px;
+    font-size:14pt;
+}
