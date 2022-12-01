@@ -25,7 +25,6 @@ body{
 }
 
 input{
-    height:50px;
     font-size:14pt;
     margin-top: 20px;
     border: solid 0.1px;
@@ -121,3 +120,6 @@ body, html {
     left: 34px;
   }
 
+#btn_submit {
+  margin-left: 30%;
+}
