@@ -1,0 +1,13 @@
+Le projet en développer à pour but d'effectuer un contrôle des saisies de l’utilisateur
+et l’empêcher de soumettre le formulaire par un moyen original en mettant en évidence le (ou les) champ erroné.
+
+La solution proposée est de donnée à l'utilisateur de comprendre leur erreurs via
+une inutilisation des features proposées.
+
+Pour cela, nous avons mis un 'switch' ne pouvant être cocher si l'utilisateur ne remplis pas les conditions.
+
+Les conditions pour soumettre le formulaire est vue par l'utilisateur
+via une distinction de couleur dans le champ concerné.
+
+Pour finir, l'utilisateur ne pourra valider le formulaire en ayant le bouton d'une couleur différentes
+ainsi que l'inactivité de celui-ci.
