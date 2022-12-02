@@ -53,14 +53,8 @@ function allValide(){
 
     console.log("fdffffffffffff" + verifUsername() && verifEmail() && verifPassword() && verifConfPassword());
 
-    oldSwitch.set
-
     if(verifUsername() && verifEmail() && verifPassword() && verifConfPassword()){
         changeBtnCouleur(false);
-
-        
-
-
     }else{
         changeBtnCouleur(true);
     }
