@@ -25,31 +25,32 @@
     <div>
         <div class="login-box">
             <h2>Register</h2>
-            <form>
+            <form autocomplete="off" method="post" action="">
+              <input autocomplete="false" name="hidden" type="text" style="display:none;">
 
 
               <div class="user-box">
 
-                <input id="username" type="text" name="" required="" onfocusout="verifUsername(),allValide()">
+                <input autocomplete="false" id="username" type="text" name="" required="" onfocusout="verifUsername(),allValide()">
                 <label id="label_username">Username</label>
 
               </div>
 
 
               <div class="user-box">
-                <input id="mail" type="mail" name="" required="" onfocusout="verifEmail(),allValide()">
+                <input autocomplete="false" id="mail" type="mail" name="" required="" onfocusout="verifEmail(),allValide()">
                 <label id="label_mail">Email</label>
               </div>
 
 
               <div class="user-box">
-                <input id="password" type="password" name="" required="" onfocusout="verifPassword(),allValide()">
+                <input autocomplete="false" id="password" type="password" name="" required="" onfocusout="verifPassword(),allValide()">
                 <label id="label_password">Password</label>
               </div>
 
 
               <div class="user-box">
-                <input id="confPassword" type="password" name="" required="" onfocusout="verifConfPassword(),allValide()">
+                <input autocomplete="false" id="confPassword" type="password" name="" required="" onfocusout="verifConfPassword(),allValide()">
                 <label id="label_confirm">Confirm</label>
               </div>
 
