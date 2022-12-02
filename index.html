@@ -29,25 +29,25 @@
 
 
               <div class="user-box">
-                <input id="username" type="text" name="" required="" onfocusout="verifUsername()">
+                <input id="username" type="text" name="" required="" onfocusout="verifUsername(),allValide()">
                 <label>Username</label>
               </div>
 
 
               <div class="user-box">
-                <input id="mail" type="mail" name="" required="" onfocusout="verifEmail()">
+                <input id="mail" type="mail" name="" required="" onfocusout="verifEmail(),allValide()">
                 <label>Email</label>
               </div>
 
 
               <div class="user-box">
-                <input id="password" type="password" name="" required="" onfocusout="verifPassword()">
+                <input id="password" type="password" name="" required="" onfocusout="verifPassword(),allValide()">
                 <label>Password</label>
               </div>
 
 
               <div class="user-box">
-                <input id="confPassword" type="password" name="" required="" onfocusout="verifConfPassword()">
+                <input id="confPassword" type="password" name="" required="" onfocusout="verifConfPassword(),allValide()">
                 <label>Confirm</label>
               </div>
 
@@ -56,6 +56,10 @@
                 <p style="font-size: 14px;">Se souvenir de moi</p>
                 <div id="animationWindow"></div>
 
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
                 
 
               </div>
@@ -78,4 +82,5 @@
 <script src="javascript/control.js"></script>
 <script src="regex.js"></script>
 <script src="switch.js"></script>
+<script src="code.js"></script>
 </html>

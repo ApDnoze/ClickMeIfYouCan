@@ -6,11 +6,11 @@ function verifUsername() {
     
     var username = document.getElementById('username').value
 
+    // console.log(username.match(/^[a-zA-Z]{3,20}$/) != null);
+
+    return username.match(/^[a-zA-Z]{3,20}$/) != null
+        
     
-    if (!username.match(/^[a-zA-Z]{3,20}$/)){
-        changeBtnCouleur(true);
-    } 
-    allValide();
 }
 
 
@@ -18,22 +18,18 @@ function verifEmail() {
     
     var mail = document.getElementById('mail').value
 
-    if (!mail.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/)){
-        changeBtnCouleur(true);
-    }
-    allValide();
-
+    // console.log(mail.match(/^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) != null);
+    return mail.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/) != null
+    
 }
 
 
 function verifPassword() {
     
     var password = document.getElementById('password').value
-
-    if (!mail.match(/^^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/)){
-        changeBtnCouleur(true);
-    }
-    allValide();
+    // console.log(password.match(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,30}$/) != null);
+    return password.match(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,30}$/) != null
+    
 }
 
 
@@ -42,10 +38,9 @@ function verifConfPassword() {
     var password = document.getElementById('password').value
     var confPassword = document.getElementById('confPassword').value
 
-    if (password != confPassword){
-        changeBtnCouleur(true);
-    }
-    allValide();
+    // console.log(password == confPassword);
+    return password == confPassword
+    
 }
 
 
@@ -53,14 +48,18 @@ function verifConfPassword() {
 function allValide(){
     var password = document.getElementById('password').value
     var confPassword = document.getElementById('confPassword').value
-    console.log(document.getElementById('mail').value);
-    if (document.getElementById('username').value != "" && document.getElementById('mail').value != "" && document.getElementById('password').value != "" && document.getElementById('confPassword').value != "" ) {
-        if (password == confPassword){
-            changeBtnCouleur(false);
-        }
+    console.log("fdffffffffffff" + verifUsername() && verifEmail() && verifPassword() && verifConfPassword());
+
+    if(verifUsername() && verifEmail() && verifPassword() && verifConfPassword()){
+        changeBtnCouleur(false);
+    }else{
+        changeBtnCouleur(true);
     }
 
 }
+
+
+
 
 
 
