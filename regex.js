@@ -48,40 +48,15 @@ function verifConfPassword() {
 function allValide(){
     var password = document.getElementById('password').value
     var confPassword = document.getElementById('confPassword').value
+    
+    var oldSwitch = getElementById('animationWindow')
+
     console.log("fdffffffffffff" + verifUsername() && verifEmail() && verifPassword() && verifConfPassword());
 
-    if(!verifUsername()){
-        changeBtnCouleur(true);
-        document.getElementById('label_username').style.color = '#e60019';
-    } else {
-        document.getElementById('label_username').style.color = '#03e9f4';
-    }
-    if (!verifEmail()){
-        changeBtnCouleur(true);
-        document.getElementById('label_mail').style.color = '#e60019';
-
-    } else {
-        document.getElementById('label_mail').style.color = '#03e9f4';
-    }
-    if (!verifPassword()){
-        changeBtnCouleur(true);
-        document.getElementById('label_password').style.color = '#e60019';
-
-    } else {
-        document.getElementById('label_password').style.color = '#03e9f4';
-    } 
-    if (!verifConfPassword()){
-        changeBtnCouleur(true);
-        document.getElementById('label_password').style.color = '#e60019';
-        document.getElementById('label_confirm').style.color = '#e60019';
-
-    } else{
-        document.getElementById('label_password').style.color = '#03e9f4';
-        document.getElementById('label_confirm').style.color = '#03e9f4';
-    
-    }
-    if (verifUsername() && verifEmail() && verifPassword() && verifConfPassword()){
+    if(verifUsername() && verifEmail() && verifPassword() && verifConfPassword()){
         changeBtnCouleur(false);
+    }else{
+        changeBtnCouleur(true);
     }
 
 }
