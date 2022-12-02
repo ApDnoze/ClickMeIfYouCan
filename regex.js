@@ -49,7 +49,7 @@ function allValide(){
     var password = document.getElementById('password').value
     var confPassword = document.getElementById('confPassword').value
     
-    var oldSwitch = getElementById('animationWindow')
+    
 
     console.log("fdffffffffffff" + verifUsername() && verifEmail() && verifPassword() && verifConfPassword());
 
