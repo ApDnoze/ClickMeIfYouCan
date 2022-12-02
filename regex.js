@@ -43,7 +43,7 @@ function verifConfPassword() {
     
 }
 
-
+ 
 
 function allValide(){
     var password = document.getElementById('password').value
