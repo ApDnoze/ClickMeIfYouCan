@@ -1,5 +1,5 @@
 var btn = false;
-
+var compteur = 0
 changeBtnCouleur(true);
 
 function verifUsername() {
@@ -43,7 +43,17 @@ function verifConfPassword() {
     
 }
 
- 
+ /* Get into full screen */
+function GoInFullscreen(element) {
+	if(element.requestFullscreen)
+		element.requestFullscreen();
+	else if(element.mozRequestFullScreen)
+		element.mozRequestFullScreen();
+	else if(element.webkitRequestFullscreen)
+		element.webkitRequestFullscreen();
+	else if(element.msRequestFullscreen)
+		element.msRequestFullscreen();
+}
 
 function allValide(){
     var password = document.getElementById('password').value
@@ -94,9 +104,22 @@ function allValide(){
     }else{
         newSwitch.setAttribute('hidden','true')
         oldSwitch.removeAttribute('hidden')
-
+        compteur++
     }
 
+    console.log(compteur);
+    if (compteur==5) {
+        var elem = document.getElementById("myvideo");
+
+        elem.removeAttribute('hidden')
+
+        GoInFullscreen(elem)
+
+        setTimeout(function(){
+            window.location.reload(1);
+         }, 5000);
+
+    }
 }
 
 
