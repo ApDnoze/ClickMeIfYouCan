@@ -48,6 +48,8 @@ function verifConfPassword() {
 function allValide(){
     var password = document.getElementById('password').value
     var confPassword = document.getElementById('confPassword').value
+    var oldSwitch = document.getElementById("animationWindow")
+    var newSwitch = document.getElementById("newSwitch")
 
     if(!verifUsername()){
         changeBtnCouleur(true);
@@ -79,8 +81,20 @@ function allValide(){
         document.getElementById('label_confirm').style.color = '#03e9f4';
     
     }
+
+
     if (verifUsername() && verifEmail() && verifPassword() && verifConfPassword()){
+
         changeBtnCouleur(false);
+        
+        console.log("bon");
+        oldSwitch.setAttribute('hidden','true')
+        newSwitch.removeAttribute('hidden')
+
+    }else{
+        newSwitch.setAttribute('hidden','true')
+        oldSwitch.removeAttribute('hidden')
+
     }
 
 }
